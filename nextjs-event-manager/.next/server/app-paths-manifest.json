@@ -1,6 +1,10 @@
 {
+  "/events/page": "app/events/page.js",
+  "/user/login/page": "app/user/login/page.js",
   "/page": "app/page.js",
   "/api/user/token/route": "app/api/user/token/route.js",
-  "/user/login/page": "app/user/login/page.js",
-  "/api/user/login/route": "app/api/user/login/route.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/api/user/login/route": "app/api/user/login/route.js",
+  "/events/invitations/page": "app/events/invitations/page.js",
+  "/api/events/route": "app/api/events/route.js"
 }

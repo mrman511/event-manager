@@ -15,7 +15,8 @@ urlpatterns=[
   path('users/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
   path('users/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
-  # path('events/', views.events),
+  path('my_events/', views.my_events),
+  path('my_events/create/', views.create_event),
   # path('events/<str:id>', views.events),
   # path('invitations/', views.invitations),
   # path('invitations/<str:id>', views.invitations),

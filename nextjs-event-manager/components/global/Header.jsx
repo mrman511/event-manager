@@ -24,6 +24,13 @@ export default function Header(){
   return (
     <header className="h-36 flex align-items-center">
       <div>
+        <div>
+          <ul>
+            <Link href='/'><li>Home</li></Link>
+            <Link href='/events'>Events<li></li></Link>
+            <Link href='/events/invitations'><li>My Invitations</li></Link>
+          </ul>
+        </div>
         { hasToken ? 
           <>
             <button className="hover:cursor-pointer" onClick={ logout }>Logout</button>

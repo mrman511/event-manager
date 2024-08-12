@@ -19,8 +19,6 @@ export async function POST(req){
     path: "/"
   })
 
-  console.log('HEEERRREEE');
-
   return NextResponse.json({ success: true })
 };
 
