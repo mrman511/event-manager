@@ -10,7 +10,7 @@ export default function LoginForm({ submitForm, formData }){
   const { token } = formData
   const router = useRouter();
 
-  function routeToPrevious(){
+  function routeToPrevious(res){
     router.push('/')
   }
 

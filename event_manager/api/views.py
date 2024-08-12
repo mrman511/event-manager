@@ -44,3 +44,16 @@ def create_event(request):
 @api_view(['GET', 'POST'])
 def single_event(request, id):
     return Response({'message': 'Nothing here'}, status=status.HTTP_404_NOT_FOUND)
+
+@api_view(['POST'])
+def create_invitations(request, event_id):
+  user=request.user
+  try:
+    event=Event.objects.get(event_id)
+  except:
+    return Response(status=status.HTTP_404_NOT_FOUND)
+
+  if user is not event.host:
+    return Response(status=status.HTTP_401_UNAUTHORIZED)
+
+  data = request.data
