@@ -4,11 +4,10 @@ import { useRef, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import InvitationFormInputs from "./InvitationsFormInputs";
 
-export default function InvitaionForm({ handleFormSubmit }){
+export default function InvitaionForm(){
   const [ numInvites, setNumInvites ] = useState(1);
   const searchParams = useSearchParams();
   const eventId = searchParams.get('event');
-  const formRef = useRef();
 
   const parsedInvitationsFormSections = [];
 

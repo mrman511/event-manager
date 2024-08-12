@@ -1,7 +1,6 @@
 from rest_framework import serializers
 
-from .models import Event
-# , Invitation, Guest
+from .models import Event, Invitation
 # from users.models import CustomUser
 
 class EventSerializer(serializers.ModelSerializer):
@@ -9,10 +8,15 @@ class EventSerializer(serializers.ModelSerializer):
     model=Event
     exclude=['_total_attending', '_total_confirmed']
 
-# class InvitationSerializer(serializers.ModelSerializer):
-#   class Meta:
-#     model=Invitation
-#     fields="__all__"
+  # def create(self, validated_data, host):
+  #   validated_data['host'] = host
+  #   return validated_data
+  
+
+class InvitationSerializer(serializers.ModelSerializer):
+  class Meta:
+    model=Invitation
+    fields="__all__"
 
 # class GuestSerializer(serializers.ModelSerializer):
 #   class Meta:
