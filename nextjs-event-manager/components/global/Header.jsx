@@ -27,8 +27,8 @@ export default function Header(){
         <div>
           <ul>
             <Link href='/'><li>Home</li></Link>
-            <Link href='/events'>Events<li></li></Link>
-            <Link href='/events/invitations'><li>My Invitations</li></Link>
+            <Link href='/myEvents'>Events<li></li></Link>
+            {/* <Link href='/events/invitations'><li>My Invitations</li></Link> */}
           </ul>
         </div>
         { hasToken ? 

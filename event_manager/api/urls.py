@@ -17,7 +17,7 @@ urlpatterns=[
 
   path('my_events/', views.my_events),
   path('my_events/create/', views.create_event),
-  # path('events/<str:id>', views.events),
+  path('my_events/<str:event_id>/invitations/create', views.create_invitations),
   # path('invitations/', views.invitations),
   # path('invitations/<str:id>', views.invitations),
 ]

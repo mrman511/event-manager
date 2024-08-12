@@ -1,13 +1,10 @@
 'use client'
 
-import { useRef, useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 import InvitationFormInputs from "./InvitationsFormInputs";
 
-export default function InvitaionForm(){
+export default function InvitaionForm({ submitForm, formData }){
   const [ numInvites, setNumInvites ] = useState(1);
-  const searchParams = useSearchParams();
-  const eventId = searchParams.get('event');
 
   const parsedInvitationsFormSections = [];
 
@@ -24,8 +21,7 @@ export default function InvitaionForm(){
     <form 
       id="invitationForm" 
       method="POST"
-      ref={ formRef }
-      handleFormSubmit={ (e)=>{ handleFormSubmit(e, `/events/${eventId}/invitations`, formRef) } }
+      onSubmit={ (e)=>submitForm(e, formData.path) }
       >
       { parsedInvitationsFormSections }
       <button id='add-invitation-btn' onClick={ increaseInvites }>Add Invitation</button>

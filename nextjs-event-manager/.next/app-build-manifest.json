@@ -1,33 +1,33 @@
 {
   "pages": {
-    "/events/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/events/page.css",
-      "static/chunks/app/events/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/user/login/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/user/login/page.css",
-      "static/chunks/app/user/login/page.js"
-    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/events/invitations/page": [
+    "/myEvents/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/events/invitations/page.css",
-      "static/chunks/app/events/invitations/page.js"
+      "static/css/app/myEvents/page.css",
+      "static/chunks/app/myEvents/page.js"
+    ],
+    "/myEvents/create/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/myEvents/create/page.css",
+      "static/chunks/app/myEvents/create/page.js"
+    ],
+    "/myEvents/[eventId]/invitations/create/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/myEvents/[eventId]/invitations/create/page.css",
+      "static/chunks/app/myEvents/[eventId]/invitations/create/page.js"
     ]
   }
 }
