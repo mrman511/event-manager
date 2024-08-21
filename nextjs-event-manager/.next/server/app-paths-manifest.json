@@ -1,6 +1,1 @@
-{
-  "/myEvents/[eventId]/invitations/create/page": "app/myEvents/[eventId]/invitations/create/page.js",
-  "/myEvents/page": "app/myEvents/page.js",
-  "/myEvents/create/page": "app/myEvents/create/page.js",
-  "/api/user/token/route": "app/api/user/token/route.js"
-}
+{}

@@ -57,3 +57,5 @@ def create_invitations(request, event_id):
     return Response(status=status.HTTP_401_UNAUTHORIZED)
 
   data = request.data
+
+  return Response(status=status.HTTP_200)
