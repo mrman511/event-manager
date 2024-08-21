@@ -1,33 +1,3 @@
 {
-  "pages": {
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
-    "/myEvents/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/myEvents/page.css",
-      "static/chunks/app/myEvents/page.js"
-    ],
-    "/myEvents/create/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/myEvents/create/page.css",
-      "static/chunks/app/myEvents/create/page.js"
-    ],
-    "/myEvents/[eventId]/invitations/create/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/myEvents/[eventId]/invitations/create/page.css",
-      "static/chunks/app/myEvents/[eventId]/invitations/create/page.js"
-    ]
-  }
+  "pages": {}
 }
