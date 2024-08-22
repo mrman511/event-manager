@@ -1,8 +1,7 @@
 'use client'
 import { useState, useEffect } from "react";
 import Link from "next/link"
-import removeToken from "@/utils/helpers/tokens/removeToken"
-import getToken from "@/utils/helpers/tokens/getToken";
+import { getToken, removeToken } from "@/utils/helpers/tokens/handleToken";
 
 export default function Header(){
   const [hasToken, setHasToken] = useState()
