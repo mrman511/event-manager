@@ -32,7 +32,7 @@ export default function LoginForm({ submitForm, formData }){
       <label >Password</label>
       <input type="password" id="password" name="password" required />
       
-      <button type="submit">Login</button>
+      <input type="submit" value="Login" />
     </form>
   )
 }
