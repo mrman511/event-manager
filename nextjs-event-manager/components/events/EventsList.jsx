@@ -11,7 +11,7 @@ export default function EventsList(){
       <NavListLine 
         key={ hostedEvent.id }
         data={ hostedEvent }
-        path={ '/myEvents/' }
+        path={ '/events/' }
       />
     );
   };
