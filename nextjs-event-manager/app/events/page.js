@@ -11,7 +11,7 @@ export default async function Page(){
     <Header />
     <main className="w-full min-h-screen flex flex-col items-center">
       <div>
-        <Link href={ '/myEvents/create' }>Create New Event</Link>
+        <Link href={ '/events/create' }>Create New Event</Link>
       </div>
       <section>
         <EventsList />
