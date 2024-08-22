@@ -29,7 +29,7 @@ export default function PasswordForm({ handleFormSubmit }){
         <input type="password" name="confirm_password" />
       </div>
       
-      <button type="submit" >Submit</button>
+      <input type="submit" value="Submit"/>
     </form>
   );
 };
